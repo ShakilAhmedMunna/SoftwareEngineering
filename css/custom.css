@@ -1,0 +1,42 @@
+.custom-nav{
+
+}
+.custom-ticker{
+	margin-top: 65px;
+}
+.head-container{
+	margin-top: 7px;
+}
+.custom-notics{
+	background-color: #333;
+	color: aliceblue;
+}
+.custom-footer{
+	background-color: #231622;
+	color: #EC0B43;
+	margin-top: 50px;
+	font-size: medium;
+}
+.custom-footer p{
+	margin: 35px 45px 35px 5px;
+	float: right;
+	font-size: 1.2em;
+}
+.more{
+	color: #EC0B43;
+	float: right;
+	font-size: 1.1em;
+	padding-right: 12px;
+	padding-bottom: 2px;
+}
+.more:hover{
+	color:#337AB7;
+	text-decoration:none;
+	
+}
+
+
+
+
+
+

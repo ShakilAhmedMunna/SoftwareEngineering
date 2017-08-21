@@ -1,0 +1,72 @@
+.jumbotron{
+	background-color: black;	
+}
+.jumbotron h1{
+	color: #FBFBFB;
+}
+
+.cat_main{
+	height: 32px;
+	width: 232px;
+	color:#8F8E8E;
+	margin-top: 51px;
+}
+.cat_box{
+	height: 32px;
+	width: 242px;
+	/* border: 1px solid #FFA500; */
+	padding: 5px 0px 12px 5px;
+	text-align: center;
+	color: #FFA500;
+	
+}
+.title_para{
+	color: orange;
+}
+.form-control{
+	border-bottom:1px solid;
+	border-color: orange;
+}
+
+.btn-default{
+	border-bottom:1px solid;
+	border-color: orange;
+	color: orange;
+}
+.table >thead > tr > th {
+    vertical-align: bottom;
+	border-bottom: 1px solid #FEE26D;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #FEE26D;
+}
+.table > tbody + tbody {
+    border-top: 1px solid orange;
+}
+.post_header{
+	padding-top: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

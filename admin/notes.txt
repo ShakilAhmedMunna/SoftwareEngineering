@@ -1,0 +1,88 @@
+
+-------------------------------
+
+login check korrar jonno ;
+
+					<?php
+		
+						if(isset($_POST['Submit']))
+						{
+							$username = $_POST['username'];
+							$password = $_POST['password'];
+								if(empty($username) or empty($password))
+								{
+									$message ='Field can not be empty';			
+								}
+								else
+								{
+									$check_login = mysql_query("SELECT id FROM users WHERE username='$username' AND password ='" .md5($password)."'" );
+								
+										if(mysql_num_rows($check_login) == 1)
+										{
+											//$message ="ok !";	//check only ......
+											session_start();
+												$get =mysql_fetch_array($check_login);
+												$user_id = $get['id'];
+												$_SESSION ['user_id'] = $user_id;
+												$_SESSION ['name'] = "aaa";
+									
+													header('location:index.php'); 
+									
+										}
+										else
+										{
+											$message = "User name or password error ...";
+										}
+								}			
+									echo "<div class='box'>$message</div>";
+						}
+					?>
+
+
+
+
+-------------------------------
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my.navbar">			
+			<div class="container"> 				
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>					
+					</button>					
+						<a href="main.php" class="navbar-brand icon_title">NEUB NEWS</a>					
+				</div>	<!-- navbar-header End -->	
+				
+				<div class="collapse navbar-collapse" id="navbar-collapse"> 
+					<ul class="nav navbar-nav">
+						<li><a href=""> Home </a></li>
+					</ul>
+				</div>				
+			</div> <!-- container End -->
+		</nav>
+		<!-- nav End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
